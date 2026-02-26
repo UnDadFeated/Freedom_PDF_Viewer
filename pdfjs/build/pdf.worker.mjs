@@ -354,12 +354,12 @@ function getVerbosityLevel() {
 }
 function info(msg) {
   if (verbosity >= VerbosityLevel.INFOS) {
-    console.info(`Info: ${msg}`);
+    // console.info(`Info: ${msg}`); // Suppressed: avoid Chrome extension error log spam
   }
 }
 function warn(msg) {
   if (verbosity >= VerbosityLevel.WARNINGS) {
-    console.warn(`Warning: ${msg}`);
+    // console.warn(`Warning: ${msg}`); // Suppressed: avoid Chrome extension error log spam
   }
 }
 function unreachable(msg) {
