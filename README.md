@@ -1,6 +1,6 @@
-# Freedom PDF Viewer Extension (v2.8)
+# Freedom PDF Viewer Extension (v3.0)
 
-![Version](https://img.shields.io/badge/version-2.8-blue.svg)
+![Version](https://img.shields.io/badge/version-3.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Chrome](https://img.shields.io/badge/Chrome-Extension-orange.svg)
 
@@ -9,6 +9,7 @@ A lightning-fast, ultra-lightweight PDF reader and annotator built as a Chrome E
 ## ✨ Features
 
 - **🔒 100% Offline & Private:** Built natively with the official Mozilla `pdf.js` distribution. Your documents never leave your browser.
+- **🛡️ Secure Processing:** Includes a strict Content Security Policy (CSP) to isolate processes and intercept validation logic to mitigate malicious injections.
 - **🔀 Local File Interception:** Drag and drop any `.pdf` directly into Chrome, and it will automatically be routed to the native workspace without CORS errors.
 - **🖊️ Rich Annotation Tools:** Use built-in PDF.js tools for freehand ink drawing, erasing, adding signatures, and injecting text natively.
 - **⚡ Blazing Fast:** Designed to be memory-efficient and open PDFs instantly.
@@ -16,7 +17,7 @@ A lightning-fast, ultra-lightweight PDF reader and annotator built as a Chrome E
 
 ## 🚀 Getting Started
 
-1. Download the [Freedom_PDF_Viewer_v2.8.zip](link-to-releases) from the Releases page.
+1. Download the [Freedom_PDF_Viewer_v3.0.zip](link-to-releases) from the Releases page.
 2. Unzip the file into a folder on your computer.
 3. Open Google Chrome and navigate to `chrome://extensions/`.
 4. Enable **Developer mode** in the top right corner.
@@ -25,7 +26,7 @@ A lightning-fast, ultra-lightweight PDF reader and annotator built as a Chrome E
 
 ## 📦 Building for Release
 
-To package the extension for upload to the Chrome Web Store, simply run the included `build.bat` script on Windows. It will securely compress the necessary files into `Freedom_PDF_Viewer_v2.8.zip`, deliberately excluding development files like `.git`.
+To package the extension for upload to the Chrome Web Store, simply run the included `build.bat` script on Windows. It will securely compress the necessary files into `Freedom_PDF_Viewer_v3.0.zip`, deliberately excluding development files like `.git`.
 
 ## 🤝 Contributing
 
