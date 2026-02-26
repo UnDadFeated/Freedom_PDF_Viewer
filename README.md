@@ -11,36 +11,32 @@ A lightning-fast, ultra-lightweight PDF reader and annotator built as a Chrome E
 * **🔒 100% Offline & Private:** Built natively with the official Mozilla `pdf.js` distribution. Your documents never leave your browser.
 * **🔀 Local File Interception:** Drag and drop any `.pdf` directly into Chrome, and it will automatically be routed to the native workspace without CORS errors.
 * **🖊️ Rich Annotation Tools:** Use built-in PDF.js tools for freehand ink drawing, erasing, adding signatures, and injecting text natively.
-* **🌙 Robust UI:** Leverages the powerful PDF.js viewer interface for universally consistent document viewing, including thumbnails, search, and outlines.
-* **💾 Save and Export:** All annotations—ink, signatures, and texts—are saved directly into the PDF via standard download.
 
-## 🛠️ Installation (Developer Mode)
+- **100% Local Processing:** Your PDFs are rendered locally using Mozilla's PDF.js. No servers, no tracking.
+* **Blazing Fast:** Designed to be memory-efficient and open PDFs instantly.
+* **Annotation Support:** Add text, highlight, and draw directly on your PDFs.
+* **Easy Saving:** Save your annotated PDFs back to your computer with a single click.
 
-1. Clone or download this repository.
-2. Open Google Chrome and navigate to `chrome://extensions/`.
-3. Enable **Developer mode** using the toggle in the top right corner.
-4. Click **Load unpacked** and select the directory containing this extension.
-5. **Crucial:** Click "Details" on the installed extension and toggle on **Allow access to file URLs** (This enables drag-and-drop support).
+## 🚀 Getting Started
 
-## 🚀 Usage
-
-* **Open a file:** Click the extension icon or navigate to a PDF, or simply drag and drop a local PDF file directly into a new browser tab.
-* **Annotate:** Click the drawing or text annotation tools in the top right toolbar to draw ink, add text, or place signatures directly on the document.
-* **Save your work:** Click the download or print buttons to save your marked-up file natively.
+1. Download the [Freedom_PDF_Viewer_v2.8.zip](link-to-releases) from the Releases page.
+2. Unzip the file into a folder on your computer.
+3. Open Google Chrome and navigate to `chrome://extensions/`.
+4. Enable **Developer mode** in the top right corner.
+5. Click **Load unpacked** and select the folder where you unzipped the extension.
+6. The extension is now installed! You can now drag and drop PDFs into the browser to view them.
 
 ## 📦 Building for Release
 
-To package the extension for upload to the Chrome Web Store, simply run the included `build.bat` script on Windows. It will securely compress the necessary files into `Freedom_PDF_Viewer_v2.7.zip`, deliberately excluding development files like `.git`.
+To package the extension for upload to the Chrome Web Store, simply run the included `build.bat` script on Windows. It will securely compress the necessary files into `Freedom_PDF_Viewer_v2.8.zip`, deliberately excluding development files like `.git`.
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
+Feel free to check [issues page](link-to-issues) if you want to contribute.
 
-1. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-2. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-3. Push to the Branch (`git push origin feature/AmazingFeature`)
-4. Open a Pull Request
+## 📝 License
 
-## 📜 License
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This project utilizes [PDF.js](https://mozilla.github.io/pdf.js/) by Mozilla, which is licensed under the Apache License 2.0.

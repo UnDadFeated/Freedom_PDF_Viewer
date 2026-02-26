@@ -852,7 +852,9 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   printResolution: {
-    value: 150,
+    // Freedom PDF Viewer: Lowered from 150 to 120 to massively improve print preparation speed 
+    // and reduce choppiness/memory usage without visibly degrading print quality.
+    value: 120,
     kind: OptionKind.VIEWER
   },
   sidebarViewOnLoad: {
