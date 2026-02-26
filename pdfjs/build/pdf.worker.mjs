@@ -3830,7 +3830,7 @@ async function JBig2(moduleArg = {}) {
       throw new Error(response.status + " : " + response.url);
     };
   } else { }
-  var out = console.log.bind(console);
+  var out = function () { }; // Suppressed: prevent WASM stdout from spamming extension error logs
   var err = console.error.bind(console);
   var wasmBinary;
   var ABORT = false;
@@ -5861,7 +5861,7 @@ async function OpenJPEG(moduleArg = {}) {
       throw new Error(response.status + " : " + response.url);
     };
   } else { }
-  var out = console.log.bind(console);
+  var out = function () { }; // Suppressed: prevent WASM stdout from spamming extension error logs
   var err = console.error.bind(console);
   var wasmBinary;
   var ABORT = false;

@@ -1,8 +1,8 @@
 @echo off
-echo Building Freedom PDF Viewer v3.0.3 for release...
+echo Building Freedom PDF Viewer v3.0.4 for release...
 
 :: Define output filename
-set OUTPUT_ZIP=Freedom_PDF_Viewer_v3.0.3.zip
+set OUTPUT_ZIP=Freedom_PDF_Viewer_v3.0.4.zip
 
 :: Remove old zip if it exists
 if exist "%OUTPUT_ZIP%" del "%OUTPUT_ZIP%"
