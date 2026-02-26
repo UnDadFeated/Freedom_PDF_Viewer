@@ -61,6 +61,7 @@ async function loadPdfFromBytes(bytes) {
         pagesContainer.innerHTML = '';
         pageWrappers = [];
         annotations = [];
+        drawnPaths = [];
     }
 
     emptyState.style.display = 'none';
