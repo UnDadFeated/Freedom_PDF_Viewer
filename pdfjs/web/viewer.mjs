@@ -9381,7 +9381,7 @@ class PDFScriptingManager {
           });
           break;
         case "println":
-          console.log(value);
+          // console.log(value);
           break;
         case "zoom":
           if (!isInPresentationMode) {
