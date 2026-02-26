@@ -5543,6 +5543,13 @@ function download(blobUrl, filename) {
   if (!a.click) {
     throw new Error('DownloadManager: "a.click()" is not supported.');
   }
+
+  // CodeQL Fix: Validate URL to prevent generic Client-side URL redirect
+  if (blobUrl && typeof blobUrl === 'string' && !blobUrl.startsWith('blob:') && !blobUrl.startsWith('data:')) {
+    console.warn('Blocked download of untrusted URL scheme.');
+    return;
+  }
+
   a.href = blobUrl;
   a.target = "_parent";
   if ("download" in a) {
