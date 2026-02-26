@@ -1,6 +1,6 @@
-# Freedom PDF Viewer Extension (v2.7)
+# Freedom PDF Viewer Extension (v2.8)
 
-![Version](https://img.shields.io/badge/version-2.7-blue.svg)
+![Version](https://img.shields.io/badge/version-2.8-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Chrome](https://img.shields.io/badge/Chrome-Extension-orange.svg)
 
@@ -8,14 +8,11 @@ A lightning-fast, ultra-lightweight PDF reader and annotator built as a Chrome E
 
 ## ✨ Features
 
-* **🔒 100% Offline & Private:** Built natively with the official Mozilla `pdf.js` distribution. Your documents never leave your browser.
-* **🔀 Local File Interception:** Drag and drop any `.pdf` directly into Chrome, and it will automatically be routed to the native workspace without CORS errors.
-* **🖊️ Rich Annotation Tools:** Use built-in PDF.js tools for freehand ink drawing, erasing, adding signatures, and injecting text natively.
-
-- **100% Local Processing:** Your PDFs are rendered locally using Mozilla's PDF.js. No servers, no tracking.
-* **Blazing Fast:** Designed to be memory-efficient and open PDFs instantly.
-* **Annotation Support:** Add text, highlight, and draw directly on your PDFs.
-* **Easy Saving:** Save your annotated PDFs back to your computer with a single click.
+- **🔒 100% Offline & Private:** Built natively with the official Mozilla `pdf.js` distribution. Your documents never leave your browser.
+- **🔀 Local File Interception:** Drag and drop any `.pdf` directly into Chrome, and it will automatically be routed to the native workspace without CORS errors.
+- **🖊️ Rich Annotation Tools:** Use built-in PDF.js tools for freehand ink drawing, erasing, adding signatures, and injecting text natively.
+- **⚡ Blazing Fast:** Designed to be memory-efficient and open PDFs instantly.
+- **💾 Easy Saving:** Save your annotated PDFs back to your computer with a single click.
 
 ## 🚀 Getting Started
 
