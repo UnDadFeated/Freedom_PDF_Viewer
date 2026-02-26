@@ -8546,3 +8546,68 @@ dialog :link {
     display: none;
   }
 }
+
+/* =========================================================================
+   Freedom PDF Viewer — Print Styles
+   =========================================================================
+   PDF.js sets body[data-pdfjsprinting] during print, renders each page as
+   a canvas image into #printContainer, then calls window.print(). These
+   rules hide the viewer UI and display only the rendered print pages.
+   ========================================================================= */
+
+/* Hide the print container by default (only shown during printing) */
+#printContainer {
+  display: none;
+}
+
+/* When the body has data-pdfjsprinting, hide the viewer and show print pages */
+body[data-pdfjsprinting] #outerContainer {
+  display: none !important;
+}
+
+body[data-pdfjsprinting] #printContainer {
+  display: block;
+}
+
+/* Print-specific media rules */
+@media print {
+
+  /* Force-hide the entire viewer UI during print */
+  #outerContainer {
+    display: none !important;
+  }
+
+  /* Show only the print container */
+  #printContainer {
+    display: block !important;
+  }
+
+  /* Each rendered page wrapper takes a full print page */
+  #printContainer .printedPage {
+    page-break-after: always;
+    page-break-inside: avoid;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Scale printed canvases to fit the page */
+  #printContainer .printedPage canvas,
+  #printContainer .printedPage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Hide dialog overlays during print */
+  #printServiceDialog {
+    display: none !important;
+  }
+
+  /* Reset body styling for clean print output */
+  body {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+}

@@ -1039,6 +1039,24 @@ See https://github.com/adobe-type-tools/cmap-resources
     <!-- editorUndoBar -->
   </div>
   <!-- outerContainer -->
+
+  <!-- Freedom PDF Viewer: Print progress dialog -->
+  <dialog id="printServiceDialog" style="min-width:200px;">
+    <div class="row">
+      <span data-l10n-id="pdfjs-print-progress-message">Preparing document for printing…</span>
+    </div>
+    <div class="row">
+      <progress value="0" max="100"></progress>
+      <span class="relative-progress" data-l10n-id="pdfjs-print-progress-percent"
+        data-l10n-args='{ "progress": 0 }'>0%</span>
+    </div>
+    <div class="row">
+      <button id="printCancel" class="dialogButton" type="button">
+        <span data-l10n-id="pdfjs-print-progress-close-button">Cancel</span>
+      </button>
+    </div>
+  </dialog>
+
   <div id="printContainer"></div>
 </body>
 
