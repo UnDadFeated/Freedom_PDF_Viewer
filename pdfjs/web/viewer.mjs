@@ -8901,7 +8901,23 @@ class PDFPrintService {
           resolve();
           return;
         }
-        print.call(window);
+        try {
+          // Freedom PDF Viewer: Get a fresh native print reference via iframe.
+          // The saved `print` reference may not work in Chrome extension context.
+          const iframe = document.createElement("iframe");
+          iframe.style.display = "none";
+          document.body.appendChild(iframe);
+          const nativePrint = iframe.contentWindow.print;
+          document.body.removeChild(iframe);
+          nativePrint.call(window);
+        } catch (err) {
+          console.error("Freedom PDF Viewer: performPrint failed, trying fallback", err);
+          try {
+            print.call(window);
+          } catch (err2) {
+            console.error("Freedom PDF Viewer: fallback print also failed", err2);
+          }
+        }
         setTimeout(resolve, 20);
       }, 0);
     });
