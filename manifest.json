@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Lite PDF Annotator",
-  "version": "1.3",
+  "version": "1.4",
   "description": "A modern, memory-efficient PDF reader and annotator. Add text to PDFs and save directly in Chrome.",
   "action": {
     "default_popup": "popup/popup.html"
@@ -13,11 +13,10 @@
     "storage",
     "unlimitedStorage",
     "webNavigation",
-    "tabs"
+    "tabs",
+    "activeTab"
   ],
   "host_permissions": [
-    "*://*/*.pdf",
-    "*://*/*.PDF",
     "file:///*"
   ]
 }
