@@ -18257,7 +18257,12 @@ const PDFViewerApplication = {
     this.pdfPresentationMode?.request();
   },
   async triggerPrinting() {
-    if (this.supportsPrinting && (await this._printPermissionPromise)) {
+    // Freedom PDF Viewer: Add timeout to permission check.
+    // In Chrome extension context, the "printingallowed" event may not fire,
+    // causing the promise to hang forever. Default to allowed after 2 seconds.
+    const permissionTimeout = new Promise(resolve => setTimeout(() => resolve(true), 2000));
+    const isAllowed = await Promise.race([this._printPermissionPromise, permissionTimeout]);
+    if (this.supportsPrinting && isAllowed) {
       window.print();
     }
   },
