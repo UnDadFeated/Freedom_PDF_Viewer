@@ -1,6 +1,6 @@
-# Freedom PDF Viewer Extension (v3.1.0)
+# Freedom PDF Viewer Extension (v3.1.1)
 
-![Version](https://img.shields.io/badge/version-3.1.0-blue.svg)
+![Version](https://img.shields.io/badge/version-3.1.1-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Chrome](https://img.shields.io/badge/Chrome-Extension-orange.svg)
 

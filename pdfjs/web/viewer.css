@@ -7070,6 +7070,7 @@ button.hasPopupMenu[aria-expanded="false"]+menu {
   --secondaryToolbarButton-spreadEven-icon: url(images/secondaryToolbarButton-spreadEven.svg);
   --secondaryToolbarButton-imageAltTextSettings-icon: var(--toolbarButton-editorStamp-icon);
   --secondaryToolbarButton-documentProperties-icon: url(images/secondaryToolbarButton-documentProperties.svg);
+  --toolbarButton-donate-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="black"><path d="M18.5 8H19c2.21 0 4 1.79 4 4s-1.79 4-4 4h-.5c-.83 0-1.5-.67-1.5-1.5V9.5c0-.83.67-1.5 1.5-1.5zm-13 13C3.57 21 2 19.43 2 17.5V11c0-1.66 1.34-3 3-3h11c1.66 0 3 1.34 3 3v6.5c0 1.93-1.57 3.5-3.5 3.5h-10zM17 11c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v6.5c0 .83.67 1.5 1.5 1.5h10c.83 0 1.5-.67 1.5-1.5V11zm2 1v2c1.1 0 2-.9 2-2s-.9-2-2-2v2zM5 2h2v3H5V2zm4 0h2v3H9V2zm4 0h2v3h-2V2z"/></svg>');
   --editorParams-stampAddImage-icon: url(images/toolbarButton-zoomIn.svg);
   --comment-edit-button-icon: url(images/comment-editButton.svg);
 }
@@ -8069,6 +8070,11 @@ dialog :link {
 #aboutButton::before {
   -webkit-mask-image: var(--secondaryToolbarButton-documentProperties-icon);
   mask-image: var(--secondaryToolbarButton-documentProperties-icon);
+}
+
+#donateButton::before {
+  -webkit-mask-image: var(--toolbarButton-donate-icon);
+  mask-image: var(--toolbarButton-donate-icon);
 }
 
 :is(#secondaryToolbar #secondaryToolbarButtonContainer) #cursorSelectTool::before {
