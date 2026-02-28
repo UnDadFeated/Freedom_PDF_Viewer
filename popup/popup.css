@@ -71,3 +71,52 @@ button:hover {
 button:active {
   transform: translateY(0);
 }
+
+.secondary-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  width: auto;
+  text-decoration: none;
+  font-family: var(--font-family);
+}
+
+.secondary-btn:hover {
+  background-color: #1a1a1a;
+  color: var(--text-color);
+  border-color: #444;
+  transform: translateY(-1px);
+}
+
+.secondary-btn:active {
+  transform: translateY(0);
+}
+
+.donate-btn {
+  color: #f59e0b;
+  border-color: #3a2a00;
+}
+
+.donate-btn:hover {
+  background-color: #1a1200;
+  color: #fbbf24;
+  border-color: #f59e0b;
+}
