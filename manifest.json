@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Freedom PDF Viewer",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "A modern, memory-efficient PDF reader and annotator. Add text to PDFs and save directly in Chrome.",
   "icons": {
     "16": "icons/icon16.png",
